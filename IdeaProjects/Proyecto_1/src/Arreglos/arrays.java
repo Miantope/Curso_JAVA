@@ -1,3 +1,5 @@
+package Arreglos;
+
 import java.util.Arrays;
 
 public class arrays {
@@ -14,13 +16,13 @@ public class arrays {
         numeros[3] = 6;
         numeros[4] = 5;
 
-        for(i = 0;i<5;i++){
+        for(i = 0;i<numeros.length;i++){
             System.out.println("Los valores del array son: " + numeros[i]);
         }
 
         //otra forma
         int[] valores = {234, 345, 123};
-        for(i=0;i<3;i++){
+        for(i=0;i<valores.length;i++){
             System.out.println("Los valores del array son: " + valores[i]);
         }
 
@@ -39,6 +41,12 @@ public class arrays {
             System.out.println("Producto " + (i + 1) + " es: " + producto[i]);
         }
 
+        //recorrer con bucle while
+        int f = 0;
+        while(f < producto.length){
+            System.out.println("Producto " + (f + 1) + " es: " + producto[f]);
+            f++;
+        }
 
     }
 }
